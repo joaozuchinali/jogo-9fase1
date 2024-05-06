@@ -70,6 +70,9 @@ public class GameController : MonoBehaviour
 
     public static void restart() 
     {
+        pontos = 0;
+        vida = 3;
+
         SceneManager.LoadScene(PlayerPrefs.GetString("CurrentLevel"));
     }
 }
